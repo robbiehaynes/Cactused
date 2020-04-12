@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,75 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Cactused" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="uGf-Se-eWQ">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="iVw-96-B45">
+                                        <rect key="frame" x="20" y="0.0" width="374" height="409"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to CACTUSED" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WL4-xZ-MRb">
+                                                <rect key="frame" x="95.5" y="0.0" width="183.5" height="204.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tMh-Xr-0uO">
+                                                <rect key="frame" x="20" y="204.5" width="334" height="204.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dix-mZ-edE">
+                                                        <rect key="frame" x="20" y="0.0" width="294" height="204.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="dix-mZ-edE" secondAttribute="bottom" id="EiY-I7-tu6"/>
+                                                    <constraint firstItem="dix-mZ-edE" firstAttribute="top" secondItem="tMh-Xr-0uO" secondAttribute="top" id="NJH-e0-9xb"/>
+                                                    <constraint firstAttribute="trailing" secondItem="dix-mZ-edE" secondAttribute="trailing" constant="20" id="TzR-nz-SFl"/>
+                                                    <constraint firstItem="dix-mZ-edE" firstAttribute="leading" secondItem="tMh-Xr-0uO" secondAttribute="leading" constant="20" id="ftM-1K-res"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ak4-JZ-RRu">
+                                        <rect key="frame" x="173.5" y="409" width="67" height="409"/>
+                                        <state key="normal" title="Next Turn"/>
+                                        <connections>
+                                            <action selector="nextTurnButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1C7-ff-O6h"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="iVw-96-B45" firstAttribute="leading" secondItem="uGf-Se-eWQ" secondAttribute="leading" constant="20" id="2DS-oE-9hI"/>
+                                    <constraint firstAttribute="trailing" secondItem="iVw-96-B45" secondAttribute="trailing" constant="20" id="vqo-UA-NH5"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uGf-Se-eWQ" secondAttribute="trailing" id="jdv-Rl-9qP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="uGf-Se-eWQ" secondAttribute="bottom" id="tRM-me-OyE"/>
+                            <constraint firstItem="uGf-Se-eWQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="v3y-HL-vbQ"/>
+                            <constraint firstItem="uGf-Se-eWQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="xZq-6J-hQ5"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="dareBG" destination="tMh-Xr-0uO" id="EXf-0z-F9s"/>
+                        <outlet property="dareView" destination="dix-mZ-edE" id="aDe-Tg-eVe"/>
+                        <outlet property="textView" destination="WL4-xZ-MRb" id="X4m-CZ-866"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="139" y="113"/>
         </scene>
     </scenes>
 </document>

@@ -13,6 +13,7 @@
 		D4F42C9D2443997D0026B5CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4F42C9B2443997D0026B5CE /* Main.storyboard */; };
 		D4F42C9F2443997E0026B5CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4F42C9E2443997E0026B5CE /* Assets.xcassets */; };
 		D4F42CA22443997E0026B5CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4F42CA02443997E0026B5CE /* LaunchScreen.storyboard */; };
+		D4F42CAA2443A64D0026B5CE /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F42CA92443A64D0026B5CE /* UIView+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		D4F42C9E2443997E0026B5CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D4F42CA12443997E0026B5CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D4F42CA32443997E0026B5CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4F42CA92443A64D0026B5CE /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				D4F42C952443997D0026B5CE /* AppDelegate.swift */,
 				D4F42C972443997D0026B5CE /* SceneDelegate.swift */,
 				D4F42C992443997D0026B5CE /* ViewController.swift */,
+				D4F42CA92443A64D0026B5CE /* UIView+Extension.swift */,
 				D4F42C9B2443997D0026B5CE /* Main.storyboard */,
 				D4F42C9E2443997E0026B5CE /* Assets.xcassets */,
 				D4F42CA02443997E0026B5CE /* LaunchScreen.storyboard */,
@@ -140,6 +143,7 @@
 			files = (
 				D4F42C9A2443997D0026B5CE /* ViewController.swift in Sources */,
 				D4F42C962443997D0026B5CE /* AppDelegate.swift in Sources */,
+				D4F42CAA2443A64D0026B5CE /* UIView+Extension.swift in Sources */,
 				D4F42C982443997D0026B5CE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
