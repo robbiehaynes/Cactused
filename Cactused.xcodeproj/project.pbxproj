@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D4D2DC422443D81F0092F68B /* cheers.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D4D2DC3F2443D81F0092F68B /* cheers.mp3 */; };
+		D4D2DC432443D81F0092F68B /* gasp.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D4D2DC402443D81F0092F68B /* gasp.mp3 */; };
+		D4D2DC442443D81F0092F68B /* ohno.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D4D2DC412443D81F0092F68B /* ohno.mp3 */; };
+		D4D2DC462443D9F90092F68B /* PlaySound.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D2DC452443D9F90092F68B /* PlaySound.swift */; };
 		D4F42C962443997D0026B5CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F42C952443997D0026B5CE /* AppDelegate.swift */; };
 		D4F42C982443997D0026B5CE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F42C972443997D0026B5CE /* SceneDelegate.swift */; };
 		D4F42C9A2443997D0026B5CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F42C992443997D0026B5CE /* ViewController.swift */; };
@@ -18,6 +22,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D4D2DC3F2443D81F0092F68B /* cheers.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cheers.mp3; sourceTree = "<group>"; };
+		D4D2DC402443D81F0092F68B /* gasp.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gasp.mp3; sourceTree = "<group>"; };
+		D4D2DC412443D81F0092F68B /* ohno.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ohno.mp3; sourceTree = "<group>"; };
+		D4D2DC452443D9F90092F68B /* PlaySound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaySound.swift; sourceTree = "<group>"; };
 		D4F42C922443997D0026B5CE /* Cactused.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cactused.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4F42C952443997D0026B5CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D4F42C972443997D0026B5CE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,6 +49,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D4D2DC3E2443D7ED0092F68B /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				D4D2DC3F2443D81F0092F68B /* cheers.mp3 */,
+				D4D2DC402443D81F0092F68B /* gasp.mp3 */,
+				D4D2DC412443D81F0092F68B /* ohno.mp3 */,
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		D4F42C892443997D0026B5CE = {
 			isa = PBXGroup;
 			children = (
@@ -60,6 +78,7 @@
 		D4F42C942443997D0026B5CE /* Cactused */ = {
 			isa = PBXGroup;
 			children = (
+				D4D2DC3E2443D7ED0092F68B /* New Group */,
 				D4F42C952443997D0026B5CE /* AppDelegate.swift */,
 				D4F42C972443997D0026B5CE /* SceneDelegate.swift */,
 				D4F42C992443997D0026B5CE /* ViewController.swift */,
@@ -69,6 +88,7 @@
 				D4F42CA02443997E0026B5CE /* LaunchScreen.storyboard */,
 				D4F42CA32443997E0026B5CE /* Info.plist */,
 				D4F42CB12443B1280026B5CE /* SweetyStrawberry.ttf */,
+				D4D2DC452443D9F90092F68B /* PlaySound.swift */,
 			);
 			path = Cactused;
 			sourceTree = "<group>";
@@ -131,10 +151,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4D2DC422443D81F0092F68B /* cheers.mp3 in Resources */,
 				D4F42CA22443997E0026B5CE /* LaunchScreen.storyboard in Resources */,
+				D4D2DC442443D81F0092F68B /* ohno.mp3 in Resources */,
 				D4F42C9F2443997E0026B5CE /* Assets.xcassets in Resources */,
 				D4F42CB22443B1280026B5CE /* SweetyStrawberry.ttf in Resources */,
 				D4F42C9D2443997D0026B5CE /* Main.storyboard in Resources */,
+				D4D2DC432443D81F0092F68B /* gasp.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,6 +168,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4D2DC462443D9F90092F68B /* PlaySound.swift in Sources */,
 				D4F42C9A2443997D0026B5CE /* ViewController.swift in Sources */,
 				D4F42C962443997D0026B5CE /* AppDelegate.swift in Sources */,
 				D4F42CAA2443A64D0026B5CE /* UIView+Extension.swift in Sources */,
