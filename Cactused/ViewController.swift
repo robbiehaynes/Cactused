@@ -23,30 +23,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func nextTurnButtonPressed(_ sender: UIButton) {
-        let dice = rollDice()
-        let num = generateNum()
         
-        if dice<4 {
-            if num == 17 {
-                textView.text = "FORFEIT"
-                dareView.text = "Add your drink to the forfeit glass"
-                setToRed()
-            } else {
-                textView.text = "DRINKING"
-                dareView.text = "\(drinking[num])"
-                setToBlue()
-            }
-        } else {
-            if num == 17 {
-                textView.text = "FORFEIT"
-                dareView.text = "Add your drink to the forfeit glass"
-                setToRed()
-            } else {
-                textView.text = "ACTIVITY"
-                dareView.text = "\(activities[num])"
-                setToGreen()
-            }
-        }
     }
     
     func rollDice() -> Int {
@@ -85,6 +62,33 @@ class ViewController: UIViewController {
         dareBG.layer.shadowOpacity = 3
         dareBG.layer.shadowOffset = CGSize(width: 0.0, height: 5.0)
         dareBG.layer.shadowRadius = 10
+    }
+    
+    @IBAction func tapAction(_ sender: UITapGestureRecognizer) {
+        let dice = rollDice()
+        let num = generateNum()
+        
+        if dice<4 {
+            if num == 17 {
+                textView.text = "FORFEIT"
+                dareView.text = "Add your drink to the forfeit glass"
+                setToRed()
+            } else {
+                textView.text = "DRINKING"
+                dareView.text = "\(drinking[num])"
+                setToBlue()
+            }
+        } else {
+            if num == 17 {
+                textView.text = "FORFEIT"
+                dareView.text = "Add your drink to the forfeit glass"
+                setToRed()
+            } else {
+                textView.text = "ACTIVITY"
+                dareView.text = "\(activities[num])"
+                setToGreen()
+            }
+        }
     }
     
 }
