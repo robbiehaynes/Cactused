@@ -123,7 +123,6 @@ class ViewController: UIViewController {
         dareBG.layer.shadowRadius = 0
     }
     
-    
     func changeViews(diceValue:Int,generatedNum:Int) {
         if diceValue<4 {
             if generatedNum == 17 {
@@ -151,6 +150,4 @@ class ViewController: UIViewController {
             }
         }
     }
-    
 }
-

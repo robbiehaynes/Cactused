@@ -49,14 +49,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D4D2DC3E2443D7ED0092F68B /* New Group */ = {
+		D4CD65AF2444AF2C00F63A05 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D4CD65B02444AF3500F63A05 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D4F42C9B2443997D0026B5CE /* Main.storyboard */,
+				D4F42CA02443997E0026B5CE /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D4CD65B12444AF4A00F63A05 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D4D2DC452443D9F90092F68B /* PlaySound.swift */,
+				D4F42C952443997D0026B5CE /* AppDelegate.swift */,
+				D4F42C972443997D0026B5CE /* SceneDelegate.swift */,
+				D4F42C992443997D0026B5CE /* ViewController.swift */,
+				D4F42CA92443A64D0026B5CE /* UIView+Extension.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D4CD65B22444AF7000F63A05 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				D4F42CA32443997E0026B5CE /* Info.plist */,
+				D4F42CB12443B1280026B5CE /* SweetyStrawberry.ttf */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		D4D2DC3E2443D7ED0092F68B /* sounds */ = {
 			isa = PBXGroup;
 			children = (
 				D4D2DC3F2443D81F0092F68B /* cheers.mp3 */,
 				D4D2DC402443D81F0092F68B /* gasp.mp3 */,
 				D4D2DC412443D81F0092F68B /* ohno.mp3 */,
 			);
-			path = "New Group";
+			path = sounds;
 			sourceTree = "<group>";
 		};
 		D4F42C892443997D0026B5CE = {
@@ -78,17 +115,12 @@
 		D4F42C942443997D0026B5CE /* Cactused */ = {
 			isa = PBXGroup;
 			children = (
-				D4D2DC3E2443D7ED0092F68B /* New Group */,
-				D4F42C952443997D0026B5CE /* AppDelegate.swift */,
-				D4F42C972443997D0026B5CE /* SceneDelegate.swift */,
-				D4F42C992443997D0026B5CE /* ViewController.swift */,
-				D4F42CA92443A64D0026B5CE /* UIView+Extension.swift */,
-				D4F42C9B2443997D0026B5CE /* Main.storyboard */,
+				D4CD65B22444AF7000F63A05 /* Assets */,
+				D4CD65B12444AF4A00F63A05 /* Controller */,
+				D4CD65B02444AF3500F63A05 /* View */,
+				D4CD65AF2444AF2C00F63A05 /* Model */,
+				D4D2DC3E2443D7ED0092F68B /* sounds */,
 				D4F42C9E2443997E0026B5CE /* Assets.xcassets */,
-				D4F42CA02443997E0026B5CE /* LaunchScreen.storyboard */,
-				D4F42CA32443997E0026B5CE /* Info.plist */,
-				D4F42CB12443B1280026B5CE /* SweetyStrawberry.ttf */,
-				D4D2DC452443D9F90092F68B /* PlaySound.swift */,
 			);
 			path = Cactused;
 			sourceTree = "<group>";
