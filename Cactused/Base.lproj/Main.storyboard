@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="ipad11_0rounded" orientation="portrait" layout="fullscreen" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,35 +12,51 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Cactused" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1194"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="iVw-96-B45">
-                                <rect key="frame" x="0.0" y="44" width="414" height="778"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="iVw-96-B45">
+                                <rect key="frame" x="0.0" y="40" width="834" height="1094"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="k2a-Tf-jzR">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="369"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OWP-rQ-suG">
+                                        <rect key="frame" x="377" y="0.0" width="80" height="50"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="80" id="IPq-Ic-aax"/>
+                                            <constraint firstAttribute="height" constant="50" id="env-TV-lgM"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                        <state key="normal">
+                                            <color key="titleColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="exitButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gp6-Lh-MJQ"/>
+                                        </connections>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="k2a-Tf-jzR">
+                                        <rect key="frame" x="96" y="90" width="642" height="240"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Welcome to CACTUSED.                     Tap to play" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WL4-xZ-MRb">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="184.5"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to CACTUSED.                     Tap to play" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WL4-xZ-MRb">
+                                                <rect key="frame" x="0.0" y="0.0" width="642" height="100"/>
                                                 <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="25"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="wCR-iV-7Z9">
-                                                <rect key="frame" x="167" y="184.5" width="80" height="184.5"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="wCR-iV-7Z9">
+                                                <rect key="frame" x="281" y="140" width="80" height="100"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="80" id="e18-kJ-z1b"/>
+                                                    <constraint firstAttribute="height" constant="100" id="oGO-ii-BvP"/>
                                                 </constraints>
                                             </imageView>
                                         </subviews>
                                     </stackView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tMh-Xr-0uO">
-                                        <rect key="frame" x="20" y="409" width="374" height="369"/>
+                                        <rect key="frame" x="20" y="370" width="794" height="724"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dix-mZ-edE">
-                                                <rect key="frame" x="20" y="0.0" width="334" height="369"/>
-                                                <string key="text">Let's get cactused! Grab yourself a drink and get ready to play. The game picks either a drink or activity card which the players must each take a turn completing (one player/family per a card). This game can be played with non-alcoholic beverages. Please be responsible.</string>
+                                                <rect key="frame" x="20" y="0.0" width="754" height="724"/>
+                                                <string key="text">Let's get cactused! Grab yourself a drink and get ready to play. The game picks either a drink or activity card (try to not get the forfeit) which the players must each take a turn completing (one player/group per a card). This game can be played with non-alcoholic beverages. Please be responsible.</string>
                                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -68,7 +84,7 @@
                         <constraints>
                             <constraint firstItem="iVw-96-B45" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="AYl-74-J4O"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="iVw-96-B45" secondAttribute="bottom" constant="40" id="UV2-AD-tsz"/>
-                            <constraint firstItem="iVw-96-B45" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="pVU-j0-zc2"/>
+                            <constraint firstItem="iVw-96-B45" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="pVU-j0-zc2"/>
                             <constraint firstAttribute="trailing" secondItem="iVw-96-B45" secondAttribute="trailing" id="quq-wc-0qM"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -79,6 +95,7 @@
                     <connections>
                         <outlet property="dareBG" destination="tMh-Xr-0uO" id="EXf-0z-F9s"/>
                         <outlet property="dareView" destination="dix-mZ-edE" id="aDe-Tg-eVe"/>
+                        <outlet property="exitButton" destination="OWP-rQ-suG" id="9Ze-Sm-MDd"/>
                         <outlet property="iconImageView" destination="wCR-iV-7Z9" id="pqM-kJ-bjP"/>
                         <outlet property="textView" destination="WL4-xZ-MRb" id="X4m-CZ-866"/>
                     </connections>
