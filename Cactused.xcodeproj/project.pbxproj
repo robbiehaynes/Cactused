@@ -81,6 +81,18 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D49F85842448E3800015C944 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				D49F85822448D4E10015C944 /* cactus.json */,
+				D49F85702448BCDC0015C944 /* diceroll.json */,
+				D49F85802448C2E70015C944 /* heartbeat.json */,
+				D49F85732448BCDC0015C944 /* smiley.json */,
+				D49F85722448BCDC0015C944 /* water.json */,
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
 		D4CD65AF2444AF2C00F63A05 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -110,6 +122,7 @@
 		D4CD65B22444AF7000F63A05 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				D49F85842448E3800015C944 /* Animations */,
 				D4F42CB12443B1280026B5CE /* SweetyStrawberry.ttf */,
 			);
 			path = Assets;
@@ -149,11 +162,6 @@
 				D4F42C952443997D0026B5CE /* AppDelegate.swift */,
 				D4F42C972443997D0026B5CE /* SceneDelegate.swift */,
 				D4F42CA32443997E0026B5CE /* Info.plist */,
-				D49F85822448D4E10015C944 /* cactus.json */,
-				D49F85702448BCDC0015C944 /* diceroll.json */,
-				D49F85802448C2E70015C944 /* heartbeat.json */,
-				D49F85732448BCDC0015C944 /* smiley.json */,
-				D49F85722448BCDC0015C944 /* water.json */,
 				D4CD65B22444AF7000F63A05 /* Assets */,
 				D4CD65B12444AF4A00F63A05 /* Controller */,
 				D4CD65B02444AF3500F63A05 /* View */,
