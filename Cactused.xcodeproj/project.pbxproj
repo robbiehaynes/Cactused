@@ -3,10 +3,16 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D5C74D2D264FD190F12ACCE /* Pods_Cactused.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFE0B8A12E950CFA7144CA4A /* Pods_Cactused.framework */; };
+		D49F85752448BCDC0015C944 /* diceroll.json in Resources */ = {isa = PBXBuildFile; fileRef = D49F85702448BCDC0015C944 /* diceroll.json */; };
+		D49F85772448BCDC0015C944 /* water.json in Resources */ = {isa = PBXBuildFile; fileRef = D49F85722448BCDC0015C944 /* water.json */; };
+		D49F85782448BCDC0015C944 /* smiley.json in Resources */ = {isa = PBXBuildFile; fileRef = D49F85732448BCDC0015C944 /* smiley.json */; };
+		D49F85812448C2E70015C944 /* heartbeat.json in Resources */ = {isa = PBXBuildFile; fileRef = D49F85802448C2E70015C944 /* heartbeat.json */; };
+		D49F85832448D4E10015C944 /* cactus.json in Resources */ = {isa = PBXBuildFile; fileRef = D49F85822448D4E10015C944 /* cactus.json */; };
 		D4D2DC422443D81F0092F68B /* cheers.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D4D2DC3F2443D81F0092F68B /* cheers.mp3 */; };
 		D4D2DC432443D81F0092F68B /* gasp.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D4D2DC402443D81F0092F68B /* gasp.mp3 */; };
 		D4D2DC442443D81F0092F68B /* ohno.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D4D2DC412443D81F0092F68B /* ohno.mp3 */; };
@@ -22,6 +28,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		13AE3989D9DF1259F9F2F2FC /* Pods-Cactused.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cactused.debug.xcconfig"; path = "Target Support Files/Pods-Cactused/Pods-Cactused.debug.xcconfig"; sourceTree = "<group>"; };
+		4293F9A7F2706BB251433C92 /* Pods-Cactused.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cactused.release.xcconfig"; path = "Target Support Files/Pods-Cactused/Pods-Cactused.release.xcconfig"; sourceTree = "<group>"; };
+		AFE0B8A12E950CFA7144CA4A /* Pods_Cactused.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cactused.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D49F85702448BCDC0015C944 /* diceroll.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = diceroll.json; sourceTree = "<group>"; };
+		D49F85722448BCDC0015C944 /* water.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = water.json; sourceTree = "<group>"; };
+		D49F85732448BCDC0015C944 /* smiley.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = smiley.json; sourceTree = "<group>"; };
+		D49F85802448C2E70015C944 /* heartbeat.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = heartbeat.json; sourceTree = "<group>"; };
+		D49F85822448D4E10015C944 /* cactus.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cactus.json; sourceTree = "<group>"; };
 		D4D2DC3F2443D81F0092F68B /* cheers.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cheers.mp3; sourceTree = "<group>"; };
 		D4D2DC402443D81F0092F68B /* gasp.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gasp.mp3; sourceTree = "<group>"; };
 		D4D2DC412443D81F0092F68B /* ohno.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ohno.mp3; sourceTree = "<group>"; };
@@ -43,15 +57,35 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D5C74D2D264FD190F12ACCE /* Pods_Cactused.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		63AE838292F7E268801F32EE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				13AE3989D9DF1259F9F2F2FC /* Pods-Cactused.debug.xcconfig */,
+				4293F9A7F2706BB251433C92 /* Pods-Cactused.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		AE5F24182E5B8E514DA514CE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AFE0B8A12E950CFA7144CA4A /* Pods_Cactused.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D4CD65AF2444AF2C00F63A05 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D4D2DC452443D9F90092F68B /* PlaySound.swift */,
+				D4F42CA92443A64D0026B5CE /* UIView+Extension.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -68,11 +102,7 @@
 		D4CD65B12444AF4A00F63A05 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				D4D2DC452443D9F90092F68B /* PlaySound.swift */,
-				D4F42C952443997D0026B5CE /* AppDelegate.swift */,
-				D4F42C972443997D0026B5CE /* SceneDelegate.swift */,
 				D4F42C992443997D0026B5CE /* ViewController.swift */,
-				D4F42CA92443A64D0026B5CE /* UIView+Extension.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -80,20 +110,19 @@
 		D4CD65B22444AF7000F63A05 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				D4F42CA32443997E0026B5CE /* Info.plist */,
 				D4F42CB12443B1280026B5CE /* SweetyStrawberry.ttf */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
 		};
-		D4D2DC3E2443D7ED0092F68B /* sounds */ = {
+		D4D2DC3E2443D7ED0092F68B /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
 				D4D2DC3F2443D81F0092F68B /* cheers.mp3 */,
 				D4D2DC402443D81F0092F68B /* gasp.mp3 */,
 				D4D2DC412443D81F0092F68B /* ohno.mp3 */,
 			);
-			path = sounds;
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 		D4F42C892443997D0026B5CE = {
@@ -101,6 +130,8 @@
 			children = (
 				D4F42C942443997D0026B5CE /* Cactused */,
 				D4F42C932443997D0026B5CE /* Products */,
+				63AE838292F7E268801F32EE /* Pods */,
+				AE5F24182E5B8E514DA514CE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -115,11 +146,19 @@
 		D4F42C942443997D0026B5CE /* Cactused */ = {
 			isa = PBXGroup;
 			children = (
+				D4F42C952443997D0026B5CE /* AppDelegate.swift */,
+				D4F42C972443997D0026B5CE /* SceneDelegate.swift */,
+				D4F42CA32443997E0026B5CE /* Info.plist */,
+				D49F85822448D4E10015C944 /* cactus.json */,
+				D49F85702448BCDC0015C944 /* diceroll.json */,
+				D49F85802448C2E70015C944 /* heartbeat.json */,
+				D49F85732448BCDC0015C944 /* smiley.json */,
+				D49F85722448BCDC0015C944 /* water.json */,
 				D4CD65B22444AF7000F63A05 /* Assets */,
 				D4CD65B12444AF4A00F63A05 /* Controller */,
 				D4CD65B02444AF3500F63A05 /* View */,
 				D4CD65AF2444AF2C00F63A05 /* Model */,
-				D4D2DC3E2443D7ED0092F68B /* sounds */,
+				D4D2DC3E2443D7ED0092F68B /* Sounds */,
 				D4F42C9E2443997E0026B5CE /* Assets.xcassets */,
 			);
 			path = Cactused;
@@ -132,9 +171,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D4F42CA62443997E0026B5CE /* Build configuration list for PBXNativeTarget "Cactused" */;
 			buildPhases = (
+				325861B071BB210AA4D15328 /* [CP] Check Pods Manifest.lock */,
 				D4F42C8E2443997D0026B5CE /* Sources */,
 				D4F42C8F2443997D0026B5CE /* Frameworks */,
 				D4F42C902443997D0026B5CE /* Resources */,
+				8251E92D8CCBD3C450E5A8DD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -185,7 +226,12 @@
 			files = (
 				D4D2DC422443D81F0092F68B /* cheers.mp3 in Resources */,
 				D4F42CA22443997E0026B5CE /* LaunchScreen.storyboard in Resources */,
+				D49F85812448C2E70015C944 /* heartbeat.json in Resources */,
+				D49F85782448BCDC0015C944 /* smiley.json in Resources */,
+				D49F85772448BCDC0015C944 /* water.json in Resources */,
 				D4D2DC442443D81F0092F68B /* ohno.mp3 in Resources */,
+				D49F85832448D4E10015C944 /* cactus.json in Resources */,
+				D49F85752448BCDC0015C944 /* diceroll.json in Resources */,
 				D4F42C9F2443997E0026B5CE /* Assets.xcassets in Resources */,
 				D4F42CB22443B1280026B5CE /* SweetyStrawberry.ttf in Resources */,
 				D4F42C9D2443997D0026B5CE /* Main.storyboard in Resources */,
@@ -194,6 +240,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		325861B071BB210AA4D15328 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Cactused-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8251E92D8CCBD3C450E5A8DD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Cactused/Pods-Cactused-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Cactused/Pods-Cactused-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Cactused/Pods-Cactused-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D4F42C8E2443997D0026B5CE /* Sources */ = {
@@ -346,6 +434,7 @@
 		};
 		D4F42CA72443997E0026B5CE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13AE3989D9DF1259F9F2F2FC /* Pods-Cactused.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -364,6 +453,7 @@
 		};
 		D4F42CA82443997E0026B5CE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4293F9A7F2706BB251433C92 /* Pods-Cactused.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
