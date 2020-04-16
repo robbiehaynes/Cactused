@@ -45,6 +45,7 @@ class ViewController: UIViewController {
         dareBG.layer.shadowOffset = CGSize(width: 0.0, height: 5.0)
         dareBG.layer.shadowRadius = 10
         startAnimation("heartbeat")
+        animationView.transform = CGAffineTransform(scaleX: 2, y: 2)
     }
     
     func setToBlue() {
@@ -55,6 +56,7 @@ class ViewController: UIViewController {
         dareBG.layer.shadowOpacity = 3
         dareBG.layer.shadowOffset = CGSize(width: 0.0, height: 5.0)
         dareBG.layer.shadowRadius = 10
+        animationView.transform = CGAffineTransform(scaleX: 1, y: 1)
         startAnimation("water")
     }
     
@@ -66,6 +68,7 @@ class ViewController: UIViewController {
         dareBG.layer.shadowOpacity = 3
         dareBG.layer.shadowOffset = CGSize(width: 0.0, height: 5.0)
         dareBG.layer.shadowRadius = 10
+        animationView.transform = CGAffineTransform(scaleX: 1, y: 1)
         startAnimation("smiley")
     }
     
@@ -124,6 +127,7 @@ class ViewController: UIViewController {
         exitButton.alpha = 0.0
         dareView.alpha = 0.0
         dareBG.alpha = 0.0
+        animationView.transform = CGAffineTransform(scaleX: 2, y: 2)
         animationView.loopMode = .playOnce
         animationView.animation = Animation.named("diceroll")
         animationView.play { (finished) in
@@ -147,6 +151,7 @@ class ViewController: UIViewController {
         dareBG.layer.shadowOpacity = 3
         dareBG.layer.shadowOffset = CGSize(width: 0.0, height: 0.0)
         dareBG.layer.shadowRadius = 0
+        animationView.transform = CGAffineTransform(scaleX: 2, y: 2)
         startAnimation("cactus")
     }
 }
